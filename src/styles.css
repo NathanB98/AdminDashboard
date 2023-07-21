@@ -23,6 +23,58 @@ body {
 
 .sidebar-container {
     grid-area: 1 / 1 / 5 / 2;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #8b5cf6;
+    color: #ffffff;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-logo {
+    margin-left: 1rem;
+}
+
+.header-title {
+    font-size: 3.53em;
+}
+
+.sidebar-links,
+.sidebar-utilities {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 2rem 0 0 0;
+}
+
+.link-item,
+.utilities-item {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.link-item:hover,
+.utilities-item:hover {
+    opacity: 80%;
+    padding-left: 1rem;
+}
+
+.sidebar-btn {
+    border: none;
+    background-color: inherit;
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 .navbar-container {
