@@ -95,6 +95,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 1rem;
 }
 
 .navbar-btn {
@@ -144,7 +145,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-right: 4rem;
-    padding-top: 1rem;
+    padding-top: 4rem;
 }
 
 .navbar-intro {
@@ -199,6 +200,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    background-color: #f3f4f6;
 }
 
 .content-projects {
@@ -234,6 +236,7 @@ body {
     border-left: solid 15px #059669;
     border-radius: 15px;
     width: fit-content;
+    background-color: #ffffff;
 }
 
 .project-card > h3 {
