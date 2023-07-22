@@ -1,3 +1,5 @@
+/* General page styling */
+
 * {
     box-sizing: border-box;
 }
@@ -21,6 +23,8 @@ body {
     border: dashed 1px red;
 }
 
+/* Styles for sidebar */
+
 .sidebar-container {
     grid-area: 1 / 1 / 5 / 2;
     display: flex;
@@ -43,6 +47,7 @@ body {
 
 .header-title {
     font-size: 3.53em;
+    margin-right: 1rem;
 }
 
 .sidebar-links,
@@ -77,9 +82,117 @@ body {
     font-weight: bold;
 }
 
+/* Styles for navbar */
+
 .navbar-container {
     grid-area: 1 / 2 / 2 / 6;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: solid 4px #e5e7eb;
 }
+
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-btn {
+    border: none;
+    background-color: inherit;
+    padding: 0;
+}
+
+.navbar-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 3rem;
+}
+
+.form-search {
+    border-radius: 25px;
+    width: 40vw;
+    height: 3rem;
+    border: none;
+    background-color: #e5e7eb;
+    padding-left: 1rem;
+    font-size: 1em;
+}
+
+.form-search:target {
+    border: none;
+}
+
+.navbar-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-right: 4rem;
+}
+
+.end-picture {
+    height: 3.5rem;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.navbar-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 4rem;
+    padding-top: 1rem;
+}
+
+.navbar-intro {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 3rem;
+}
+
+.intro-picture {
+    height: 7rem;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.intro-greeting > * {
+    margin: 1rem 0 1rem 0;
+}
+
+.navbar-posting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 1.25rem;
+}
+
+.posting-btn {
+    border: none;
+    background-color: #8b5cf6;
+    color: #ffffff;
+    height: 3rem;
+    width: 8rem;
+    border-radius: 25px;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.posting-btn:hover {
+    opacity: 90%;
+}
+
+.posting-btn:active {
+    border: solid 1px #e5e7eb;
+}
+
+/* Styles for content sub-container */
 
 .content-container {
     grid-area: 2 / 2 / 6 / 6;
